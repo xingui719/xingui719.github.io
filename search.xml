@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>关于hexo搭建博客css样式加载不出来</title>
+      <link href="/2021/07/23/%E5%85%B3%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2css%E6%A0%B7%E5%BC%8F%E5%8A%A0%E8%BD%BD%E4%B8%8D%E5%87%BA%E6%9D%A5/"/>
+      <url>/2021/07/23/%E5%85%B3%E4%BA%8Ehexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2css%E6%A0%B7%E5%BC%8F%E5%8A%A0%E8%BD%BD%E4%B8%8D%E5%87%BA%E6%9D%A5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="关于hexo-css、js样式加载不出来"><a href="#关于hexo-css、js样式加载不出来" class="headerlink" title="关于hexo css、js样式加载不出来"></a>关于hexo css、js样式加载不出来</h1><ul><li><p>搭建hexo博客时样式总是加载不出来</p><p>  对于如何搭建hexo博客网上有很多关于使用hexo + github pages搭建个人博客的博客，按照博客内容也都可以搭建起来。运行后在本地服务器都可以实现访问，但是通过域名访问时却能够访问页面但是不能加载CSS样式文件和Jquery文件。</p><p>  在本地server成功，显示没有问题<br>  在这里插入图片描述</p><p>  但是在Git上部署至github上之后，就无法显示主题、图片和基本样式了<br>  在这里插入图片描述</p><p>  通过控制台查看样式文件报404，是因为url地址不对。<br>  需要修改根目录_config.yml文件中的url地址和根目录</p></li></ul><h2 id="URL"><a href="#URL" class="headerlink" title="URL"></a>URL</h2><p>我这里修改了_config.yml文件中的url地址为以下样式<br>url: <a href="https://lucasbase.github.io/">https://lucasbase.github.io/</a> </p><p>最后重新部署上传就可以了，执行以下命令</p><ul><li>hexo clean</li><li>hexo g</li><li>hexo d</li></ul><p><a href="https://blog.csdn.net/m0_45483025/article/details/116355865">本文参考地址</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/07/17/hello-world/"/>
       <url>/2021/07/17/hello-world/</url>
